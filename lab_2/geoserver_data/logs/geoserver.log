@@ -1,0 +1,634 @@
+CONFIG 2026-04-25 08:40:53,655 [main][Log4J2Logger.java:215] : Logging policy: Log4J2
+CONFIG 2026-04-25 08:40:53,813 [main][Log4J2Logger.java:189] : Factory implementations for category GridCoverageFactory:
+  org.geotools.coverage.grid.GridCoverageFactory
+CONFIG 2026-04-25 08:40:53,955 [main][Log4J2Logger.java:189] : Factory implementations for category FilterFactory:
+  org.geotools.filter.FilterFactoryImpl
+CONFIG 2026-04-25 08:40:53,971 [main][Log4J2Logger.java:189] : Factory implementations for category StyleFactory:
+  org.geotools.styling.StyleFactoryImpl
+CONFIG 2026-04-25 08:40:53,979 [main][Log4J2Logger.java:189] : Factory implementations for category FeatureFactory:
+  org.geotools.feature.LenientFeatureFactoryImpl
+  org.geotools.feature.ValidatingFeatureFactoryImpl
+DEBUG 2026-04-25 08:40:54,203 [main][Log4J2Logger.java:220] : Extension lookup 'XStreamPersisterInitializer', prior to bean geoserverExtensions initialisation.
+DEBUG 2026-04-25 08:40:54,204 [main][Log4J2Logger.java:220] : Extension lookup 'ExtensionFilter', prior to bean geoserverExtensions initialisation.
+DEBUG 2026-04-25 08:40:54,207 [main][Log4J2Logger.java:220] : Extension lookup 'ExtensionProvider', but provided ApplicationContext is unset.
+DEBUG 2026-04-25 08:40:54,207 [main][Log4J2Logger.java:220] : Extension lookup 'ExtensionFilter', but provided ApplicationContext is unset.
+DEBUG 2026-04-25 08:40:54,232 [main][Log4J2Logger.java:220] : CONFIGURING GEOSERVER LOGGING -------------------------
+25 Apr 08:40:54 CONFIG [geoserver.logging] - Log4j 2 configuration set to DEFAULT_LOGGING.xml
+25 Apr 08:40:55 WARN   [geoserver.monitor] - monitoring storage memory not found, falling back to 'memory'
+25 Apr 08:40:56 CONFIG [org.geoserver] - GeoServer configuration lock is enabled
+25 Apr 08:40:56 CONFIG [org.geoserver] - Loading catalog /opt/geoserver/data_dir
+25 Apr 08:40:56 WARN   [org.geoserver] - No 'workspaces' directory found, unable to load any stores.
+25 Apr 08:40:56 CONFIG [org.geoserver] - Read catalog in 7.057 ms
+25 Apr 08:40:56 CONFIG [org.geoserver] - Loaded service 'csw', enabled
+25 Apr 08:40:56 CONFIG [org.geoserver] - Loaded service 'WMSInfoImpl--e3f3fb4:19dc3cc8f80:-7ffb', enabled
+25 Apr 08:40:56 CONFIG [org.geoserver] - Loaded service 'WFSInfoImpl--e3f3fb4:19dc3cc8f80:-7ffa', enabled
+25 Apr 08:40:56 CONFIG [org.geoserver] - Loaded service 'WMTSInfoImpl--e3f3fb4:19dc3cc8f80:-7ff9', enabled
+25 Apr 08:40:56 CONFIG [org.geoserver] - Loaded service 'WCSInfoImpl--e3f3fb4:19dc3cc8f80:-7ff8', enabled
+25 Apr 08:40:56 CONFIG [org.geoserver] - Loaded service 'WPSInfoImpl--e3f3fb4:19dc3cc8f80:-7ff7', enabled
+25 Apr 08:40:56 CONFIG [gwc.config] - Will look for 'geowebcache.xml' in directory '/opt/geoserver/data_dir/gwc'.
+25 Apr 08:40:56 CONFIG [gwc.config] - Create configuration file '/opt/geoserver/data_dir/gwc/geowebcache.xml' from template jar:file:/usr/local/tomcat/webapps/geoserver/WEB-INF/lib/gwc-core-1.24.2.jar!/geowebcache_empty.xml
+25 Apr 08:40:57 WARN   [config.XMLConfiguration] - GWC configuration validation error: cvc-elt.1.a: Cannot find the declaration of element 'gwcConfiguration'.
+25 Apr 08:40:57 WARN   [config.XMLConfiguration] - Will try to use configuration anyway. Please check the order of declared elements against the schema.
+25 Apr 08:40:57 CONFIG [config.XMLConfiguration] - Initializing GridSets from /opt/geoserver/data_dir/gwc
+25 Apr 08:40:57 CONFIG [config.XMLConfiguration] - Initializing layers from /opt/geoserver/data_dir/gwc
+25 Apr 08:40:57 CONFIG [gwc.layer] - Initializing GWC configuration based on GeoServer's Catalog
+25 Apr 08:40:57 CONFIG [gwc.layer] - GeoServer TileLayer store base directory is: gwc-layers
+25 Apr 08:40:57 CONFIG [gwc.layer] - Loading tile layers from gwc-layers
+25 Apr 08:40:57 CONFIG [gwc.layer] - Loaded 0 tile layers in 2.956 ms
+25 Apr 08:40:57 CONFIG [storage.BlobStoreAggregator] - BlobStoreConfiguration /opt/geoserver/data_dir/gwc contained no blob store infos.
+25 Apr 08:40:57 CONFIG [storage.DefaultStorageFinder] - Found system environment variableGEOWEBCACHE_CACHE_DIR set to /opt/geoserver/data_dir/gwc, using it as the default prefix.
+25 Apr 08:40:57 CONFIG [gwc.config] - Initializing GeoServer specific GWC configuration from gwc-gs.xml
+25 Apr 08:41:00 INFO   [flow.config] - Loaded control-flow rule: ows.global=100
+25 Apr 08:41:00 INFO   [flow.config] - Loaded control-flow rule: ows.wms.getmap=10
+25 Apr 08:41:00 INFO   [flow.config] - Loaded control-flow rule: ows.wfs.getfeature.application/msexcel=4
+25 Apr 08:41:00 INFO   [flow.config] - Loaded control-flow rule: user=6
+25 Apr 08:41:00 INFO   [flow.config] - Loaded control-flow rule: ows.gwc=16
+25 Apr 08:41:00 INFO   [flow.config] - Loaded control-flow rule: user.ows.wps.execute=1000/d;30s
+25 Apr 08:41:00 CONFIG [geoserver.flow] - Control-flow active with 6 flow controllers
+25 Apr 08:41:00 CONFIG [gwc.config] - Will look for 'geowebcache-diskquota.xml' in directory '/opt/geoserver/data_dir/gwc'.
+25 Apr 08:41:00 CONFIG [gwc.config] - Will look for 'geowebcache-diskquota-jdbc.xml' in directory '/opt/geoserver/data_dir/gwc'.
+25 Apr 08:41:00 CONFIG [diskquota.ConfigLoader] - Quota config is: /opt/geoserver/data_dir/gwc/geowebcache-diskquota.xml
+25 Apr 08:41:00 CONFIG [diskquota.ConfigLoader] - Quota config is: /opt/geoserver/data_dir/gwc/geowebcache-diskquota.xml
+25 Apr 08:41:00 INFO   [geoserver.monitor] - Monitor extension enabled
+25 Apr 08:41:01 WARN   [turbojpeg.TurboJPEGMapResponse] - The turbo jpeg encoder is available for usage
+25 Apr 08:41:02 CONFIG [geowebcache.GeoWebCacheDispatcher] - Invoked setServletPrefix(gwc)
+25 Apr 08:41:02 CONFIG [wms.WMSService] - Will NOT recombine tiles for non-tiling clients.
+25 Apr 08:41:02 CONFIG [wms.WMSService] - Will proxy requests to backend that are not getmap or getcapabilities.
+25 Apr 08:41:03 CONFIG [geoserver.wps] - Found 5 bindable processes in GeoServer specific processes
+25 Apr 08:41:03 CONFIG [geoserver.wps] - Found 89 bindable processes in Deprecated processes
+25 Apr 08:41:03 CONFIG [geoserver.wps] - Blacklisting process vec:GroupCandidateSelection as the input groupingAttributes of type class java.lang.Object cannot be handled
+25 Apr 08:41:03 CONFIG [geoserver.wps] - Found 31 bindable processes in Vector processes
+25 Apr 08:41:03 CONFIG [geoserver.wps] - Blacklisting process ras:ConvolveCoverage as the input kernel of type class javax.media.jai.KernelJAI cannot be handled
+25 Apr 08:41:03 CONFIG [geoserver.wps] - Blacklisting process ras:RasterZonalStatistics2 as the input zones of type class java.lang.Object cannot be handled
+25 Apr 08:41:03 CONFIG [geoserver.wps] - Blacklisting process ras:RasterZonalStatistics2 as the input nodata of type class it.geosolutions.jaiext.range.Range cannot be handled
+25 Apr 08:41:03 CONFIG [geoserver.wps] - Blacklisting process ras:RasterZonalStatistics2 as the input rangeData of type class java.lang.Object cannot be handled
+25 Apr 08:41:03 CONFIG [geoserver.wps] - Blacklisting process ras:RasterZonalStatistics2 as the output zonal statistics of type interface java.util.List cannot be handled
+25 Apr 08:41:03 CONFIG [geoserver.wps] - Found 18 bindable processes in Raster processes
+25 Apr 08:41:03 CONFIG [geoserver.wps] - Found 48 bindable processes in Geometry processes
+25 Apr 08:41:03 CONFIG [geoserver.wps] - Found 1 bindable processes in PolygonLabelProcess
+25 Apr 08:41:03 CONFIG [geoserver.wps] - Found 1 bindable processes in geo
+25 Apr 08:41:03 CONFIG [geoserver.wps] - Found 1 bindable processes in geo
+25 Apr 08:41:04 CONFIG [diskquota.ConfigLoader] - Quota config is: /opt/geoserver/data_dir/gwc/geowebcache-diskquota.xml
+25 Apr 08:41:04 CONFIG [diskquota.DiskQuotaMonitor] - Setting up disk quota periodic enforcement task
+25 Apr 08:41:04 CONFIG [diskquota.DiskQuotaMonitor] - 0 layers configured with their own quotas. 
+25 Apr 08:41:04 CONFIG [diskquota.DiskQuotaMonitor] - 0 layers attached to global quota 20.0 GB
+25 Apr 08:41:04 CONFIG [diskquota.DiskQuotaMonitor] - Disk quota periodic enforcement task set up every 5 SECONDS
+25 Apr 08:41:04 CONFIG [geoserver.security] - AuthenticationCache Initialized with 1000 Max Entries, 300 seconds idle time, 600 seconds time to live and 3 concurrency level
+25 Apr 08:41:04 CONFIG [geoserver.security] - AuthenticationCache Eviction Task created to run every 600 seconds
+25 Apr 08:41:06 CONFIG [geoserver.security] - Start reloading user/groups for service named default
+25 Apr 08:41:06 CONFIG [geoserver.security] - Reloading user/groups successful for service named default
+25 Apr 08:41:06 INFO   [config.XMLConfiguration] - Wrote configuration to /opt/geoserver/data_dir/gwc
+25 Apr 08:42:48 WARN   [geoserver.security] - Failed login, user  from 172.19.0.1
+25 Apr 08:42:48 INFO   [geoserver.security] - Brute force attack prevention, delaying login for 3761ms
+25 Apr 08:42:52 WARN   [geoserver.security] - Failed login, user  from 172.19.0.1
+25 Apr 08:42:52 INFO   [geoserver.security] - Brute force attack prevention, delaying login for 1183ms
+25 Apr 08:43:08 INFO   [geoserver.security] - Strong cryptography is available
+25 Apr 09:45:07 INFO   [geoserver.gwc] - Saving GeoSeverTileLayer gis:buildings
+25 Apr 09:45:10 CONFIG [platform.resource] - Notifying ENTRY_CREATE change on /opt/geoserver/data_dir/gwc-layers. Created: 1, removed: 0, modified: 0
+25 Apr 09:45:25 INFO   [geoserver.gwc] - Saving GeoSeverTileLayer gis:poi
+25 Apr 09:45:25 CONFIG [platform.resource] - Notifying ENTRY_MODIFY change on /opt/geoserver/data_dir/gwc-layers. Created: 1, removed: 0, modified: 0
+25 Apr 09:45:36 INFO   [geoserver.gwc] - Saving GeoSeverTileLayer gis:roads
+25 Apr 09:45:41 CONFIG [platform.resource] - Notifying ENTRY_MODIFY change on /opt/geoserver/data_dir/gwc-layers. Created: 1, removed: 0, modified: 0
+25 Apr 09:47:24 INFO   [geoserver.wms] - 
+Request: getServiceInfo
+25 Apr 09:47:24 INFO   [geoserver.flow] - Request [wms 1.0.0 GetLegendGraphic] starting, processing through flow controllers
+25 Apr 09:47:24 INFO   [geoserver.flow] - Request control-flow performed, running requests: 1, blocked requests: 0
+25 Apr 09:47:24 INFO   [geoserver.wms] - 
+Request: getLegendGraphic
+	BaseUrl = http://localhost:8080/geoserver/
+	Env = {}
+	Exceptions = SE_XML
+	FeatureType = null
+	Format = image/png
+	Get = false
+	Height = 20
+	Kvp = {STRICT=false, REQUEST=GetLegendGraphic, FORMAT=image/png, VERSION=1.0.0, STYLE=generic, WIDTH=20, HEIGHT=20}
+	Layers = []
+	LegendOptions = {}
+	Legends = [LegendRequest [layer=, name= styleName=generic, title=null, legendInfo=null]]
+	Locale = null
+	RawKvp = {STRICT=false, REQUEST=GetLegendGraphic, FORMAT=image/png, VERSION=1.0.0, STYLE=generic, WIDTH=20, HEIGHT=20}
+	Request = GetLegendGraphic
+	RequestCharset = null
+	Scale = -1.0
+	Strict = false
+	Transparent = false
+	Version = 1.0.0
+	Width = 20
+	Wms = org.geoserver.wms.WMS@609dcfeb
+25 Apr 09:47:24 INFO   [geoserver.flow] - releasing flow controllers for [wms 1.0.0 GetLegendGraphic]
+25 Apr 09:47:24 INFO   [geoserver.flow] - Request completed, running requests: 0, blocked requests: 0
+25 Apr 09:47:25 WARN   [wicket.Localizer] - Tried to retrieve a localized string for a component that has not yet been added to the page. This can sometimes lead to an invalid or no localized resource returned. Make sure you are not calling Component#getString() inside your Component's constructor. Offending component: [DimensionEditor [Component id = elevation]]
+25 Apr 09:47:25 WARN   [wicket.Localizer] - Tried to retrieve a localized string for a component that has not yet been added to the page. This can sometimes lead to an invalid or no localized resource returned. Make sure you are not calling Component#getString() inside your Component's constructor. Offending component: [DimensionEditor [Component id = elevation]]
+25 Apr 09:48:02 INFO   [geoserver.wms] - 
+Request: getServiceInfo
+25 Apr 09:48:02 INFO   [geoserver.flow] - Request [WMS 1.1.0 GetMap] starting, processing through flow controllers
+25 Apr 09:48:02 INFO   [geoserver.flow] - Request control-flow performed, running requests: 1, blocked requests: 0
+25 Apr 09:48:03 INFO   [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8080/geoserver/
+	Bbox = SRSEnvelope[50.33022689819336 : 50.338138580322266, 53.5556640625 : 53.55738830566406]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	Clip = null
+	CQLFilter = null
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic longitude", EAST], 
+  AXIS["Geodetic latitude", NORTH], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = SE_XML
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Format = application/openlayers
+	FormatOptions = {}
+	Get = true
+	Height = 330
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@e4804762]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {REQUEST=GetMap, SRS=EPSG:4326, FORMAT=application/openlayers, BBOX=50.33022689819336,53.5556640625,50.338138580322266,53.55738830566406, VERSION=1.1.0, STYLES=, SERVICE=WMS, WIDTH=768, HEIGHT=330, LAYERS=gis:buildings}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=generic]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = false
+	ValidateSchema = false
+	Version = 1.1.0
+	ViewParams = null
+	Width = 768
+25 Apr 09:48:03 INFO   [geoserver.flow] - releasing flow controllers for [WMS 1.1.0 GetMap]
+25 Apr 09:48:03 INFO   [geoserver.flow] - Request completed, running requests: 0, blocked requests: 0
+25 Apr 09:48:03 INFO   [geoserver.wms] - 
+Request: getServiceInfo
+25 Apr 09:48:03 INFO   [geoserver.flow] - Request [WMS 1.1.1 GetMap] starting, processing through flow controllers
+25 Apr 09:48:03 INFO   [geoserver.flow] - Request control-flow performed, running requests: 1, blocked requests: 0
+25 Apr 09:48:03 INFO   [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8080/geoserver/
+	Bbox = SRSEnvelope[50.3300621509552 : 50.338306188583374, 53.55475330352783 : 53.558298110961914]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	Clip = null
+	CQLFilter = null
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic longitude", EAST], 
+  AXIS["Geodetic latitude", NORTH], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_inimage
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 331
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@e4804762]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {EXCEPTIONS=application/vnd.ogc.se_inimage, REQUEST=GetMap, FORMAT=image/png, SRS=EPSG:4326, BBOX=50.3300621509552,53.55475330352783,50.338306188583374,53.558298110961914, VERSION=1.1.1, STYLES=, SERVICE=WMS, WIDTH=769, HEIGHT=331, TRANSPARENT=true, LAYERS=gis:buildings}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=generic]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.1.1
+	ViewParams = null
+	Width = 769
+25 Apr 09:48:03 INFO   [geoserver.flow] - releasing flow controllers for [WMS 1.1.1 GetMap]
+25 Apr 09:48:03 INFO   [geoserver.flow] - Request completed, running requests: 0, blocked requests: 0
+25 Apr 09:48:05 INFO   [geoserver.wms] - 
+Request: getServiceInfo
+25 Apr 09:48:05 INFO   [geoserver.flow] - Request [WMS 1.1.1 GetMap] starting, processing through flow controllers
+25 Apr 09:48:05 INFO   [geoserver.flow] - Request control-flow performed, running requests: 1, blocked requests: 0
+25 Apr 09:48:05 INFO   [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8080/geoserver/
+	Bbox = SRSEnvelope[50.33327999711037 : 50.33431050181389, 53.55491745471954 : 53.555360555648804]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	Clip = null
+	CQLFilter = null
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic longitude", EAST], 
+  AXIS["Geodetic latitude", NORTH], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_inimage
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 331
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@e4804762]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {EXCEPTIONS=application/vnd.ogc.se_inimage, REQUEST=GetMap, FORMAT=image/png, SRS=EPSG:4326, BBOX=50.33327999711037,53.55491745471954,50.33431050181389,53.555360555648804, VERSION=1.1.1, STYLES=, SERVICE=WMS, WIDTH=769, HEIGHT=331, TRANSPARENT=true, LAYERS=gis:buildings}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=generic]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.1.1
+	ViewParams = null
+	Width = 769
+25 Apr 09:48:05 INFO   [geoserver.flow] - releasing flow controllers for [WMS 1.1.1 GetMap]
+25 Apr 09:48:05 INFO   [geoserver.flow] - Request completed, running requests: 0, blocked requests: 0
+25 Apr 09:48:06 INFO   [geoserver.wms] - 
+Request: getServiceInfo
+25 Apr 09:48:06 INFO   [geoserver.flow] - Request [WMS 1.1.1 GetMap] starting, processing through flow controllers
+25 Apr 09:48:06 INFO   [geoserver.flow] - Request control-flow performed, running requests: 1, blocked requests: 0
+25 Apr 09:48:06 INFO   [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8080/geoserver/
+	Bbox = SRSEnvelope[50.332818388938904 : 50.33487939834595, 53.55484610795975 : 53.55573230981827]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	Clip = null
+	CQLFilter = null
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic longitude", EAST], 
+  AXIS["Geodetic latitude", NORTH], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_inimage
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 331
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@e4804762]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {EXCEPTIONS=application/vnd.ogc.se_inimage, REQUEST=GetMap, FORMAT=image/png, SRS=EPSG:4326, BBOX=50.332818388938904,53.55484610795975,50.33487939834595,53.55573230981827, VERSION=1.1.1, STYLES=, SERVICE=WMS, WIDTH=769, HEIGHT=331, TRANSPARENT=true, LAYERS=gis:buildings}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=generic]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.1.1
+	ViewParams = null
+	Width = 769
+25 Apr 09:48:06 INFO   [geoserver.flow] - releasing flow controllers for [WMS 1.1.1 GetMap]
+25 Apr 09:48:06 INFO   [geoserver.flow] - Request completed, running requests: 0, blocked requests: 0
+25 Apr 09:48:06 INFO   [geoserver.wms] - 
+Request: getServiceInfo
+25 Apr 09:48:06 INFO   [geoserver.flow] - Request [WMS 1.1.1 GetMap] starting, processing through flow controllers
+25 Apr 09:48:06 INFO   [geoserver.flow] - Request control-flow performed, running requests: 1, blocked requests: 0
+25 Apr 09:48:06 INFO   [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8080/geoserver/
+	Bbox = SRSEnvelope[50.33005142211914 : 50.338295459747314, 53.553916454315186 : 53.55746126174927]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	Clip = null
+	CQLFilter = null
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic longitude", EAST], 
+  AXIS["Geodetic latitude", NORTH], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_inimage
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 331
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@e4804762]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {EXCEPTIONS=application/vnd.ogc.se_inimage, REQUEST=GetMap, FORMAT=image/png, SRS=EPSG:4326, BBOX=50.33005142211914,53.553916454315186,50.338295459747314,53.55746126174927, VERSION=1.1.1, STYLES=, SERVICE=WMS, WIDTH=769, HEIGHT=331, TRANSPARENT=true, LAYERS=gis:buildings}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=generic]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.1.1
+	ViewParams = null
+	Width = 769
+25 Apr 09:48:06 INFO   [geoserver.flow] - releasing flow controllers for [WMS 1.1.1 GetMap]
+25 Apr 09:48:06 INFO   [geoserver.flow] - Request completed, running requests: 0, blocked requests: 0
+25 Apr 09:48:06 INFO   [geoserver.wms] - 
+Request: getServiceInfo
+25 Apr 09:48:06 INFO   [geoserver.flow] - Request [WMS 1.1.1 GetMap] starting, processing through flow controllers
+25 Apr 09:48:06 INFO   [geoserver.flow] - Request control-flow performed, running requests: 1, blocked requests: 0
+25 Apr 09:48:06 INFO   [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8080/geoserver/
+	Bbox = SRSEnvelope[50.31896209716797 : 50.351938247680664, 53.54997253417969 : 53.564151763916016]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	Clip = null
+	CQLFilter = null
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic longitude", EAST], 
+  AXIS["Geodetic latitude", NORTH], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_inimage
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 331
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@e4804762]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {EXCEPTIONS=application/vnd.ogc.se_inimage, REQUEST=GetMap, FORMAT=image/png, SRS=EPSG:4326, BBOX=50.31896209716797,53.54997253417969,50.351938247680664,53.564151763916016, VERSION=1.1.1, STYLES=, SERVICE=WMS, WIDTH=769, HEIGHT=331, TRANSPARENT=true, LAYERS=gis:buildings}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=generic]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.1.1
+	ViewParams = null
+	Width = 769
+25 Apr 09:48:06 INFO   [geoserver.flow] - releasing flow controllers for [WMS 1.1.1 GetMap]
+25 Apr 09:48:06 INFO   [geoserver.flow] - Request completed, running requests: 0, blocked requests: 0
+25 Apr 09:48:07 INFO   [geoserver.wms] - 
+Request: getServiceInfo
+25 Apr 09:48:07 INFO   [geoserver.flow] - Request [WMS 1.1.1 GetMap] starting, processing through flow controllers
+25 Apr 09:48:07 INFO   [geoserver.flow] - Request control-flow performed, running requests: 1, blocked requests: 0
+25 Apr 09:48:07 INFO   [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8080/geoserver/
+	Bbox = SRSEnvelope[50.32949352264404 : 50.33773756027222, 53.55522537231445 : 53.558770179748535]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	Clip = null
+	CQLFilter = null
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic longitude", EAST], 
+  AXIS["Geodetic latitude", NORTH], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_inimage
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 331
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@e4804762]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {EXCEPTIONS=application/vnd.ogc.se_inimage, REQUEST=GetMap, FORMAT=image/png, SRS=EPSG:4326, BBOX=50.32949352264404,53.55522537231445,50.33773756027222,53.558770179748535, VERSION=1.1.1, STYLES=, SERVICE=WMS, WIDTH=769, HEIGHT=331, TRANSPARENT=true, LAYERS=gis:buildings}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=generic]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.1.1
+	ViewParams = null
+	Width = 769
+25 Apr 09:48:07 INFO   [geoserver.flow] - releasing flow controllers for [WMS 1.1.1 GetMap]
+25 Apr 09:48:07 INFO   [geoserver.flow] - Request completed, running requests: 0, blocked requests: 0
+25 Apr 09:48:08 INFO   [geoserver.wms] - 
+Request: getServiceInfo
+25 Apr 09:48:08 INFO   [geoserver.flow] - Request [WMS 1.1.1 GetMap] starting, processing through flow controllers
+25 Apr 09:48:08 INFO   [geoserver.flow] - Request control-flow performed, running requests: 1, blocked requests: 0
+25 Apr 09:48:08 INFO   [geoserver.wms] - 
+Request: getMap
+	Angle = 0.0
+	BaseUrl = http://localhost:8080/geoserver/
+	Bbox = SRSEnvelope[50.32598304748535 : 50.3424711227417, 53.55347442626953 : 53.560564041137695]
+	BgColor = java.awt.Color[r=255,g=255,b=255]
+	Buffer = 0
+	Clip = null
+	CQLFilter = null
+	Crs = GEOGCS["WGS 84", 
+  DATUM["World Geodetic System 1984", 
+    SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], 
+    AUTHORITY["EPSG","6326"]], 
+  PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], 
+  UNIT["degree", 0.017453292519943295], 
+  AXIS["Geodetic longitude", EAST], 
+  AXIS["Geodetic latitude", NORTH], 
+  AUTHORITY["EPSG","4326"]]
+	Elevation = []
+	Env = {}
+	Exceptions = application/vnd.ogc.se_inimage
+	FeatureId = null
+	FeatureVersion = null
+	Filter = null
+	Format = image/png
+	FormatOptions = {}
+	Get = true
+	Height = 331
+	Interpolations = []
+	Layers = [org.geoserver.wms.MapLayerInfo@e4804762]
+	MaxFeatures = null
+	Palette = null
+	RawKvp = {EXCEPTIONS=application/vnd.ogc.se_inimage, REQUEST=GetMap, FORMAT=image/png, SRS=EPSG:4326, BBOX=50.32598304748535,53.55347442626953,50.3424711227417,53.560564041137695, VERSION=1.1.1, STYLES=, SERVICE=WMS, WIDTH=769, HEIGHT=331, TRANSPARENT=true, LAYERS=gis:buildings}
+	RemoteOwsType = null
+	RemoteOwsURL = null
+	Request = GetMap
+	RequestCharset = UTF-8
+	ScaleMethod = null
+	Sld = null
+	SldBody = null
+	SldVersion = null
+	SortBy = null
+	SortByArrays = null
+	SRS = EPSG:4326
+	StartIndex = null
+	StyleBody = null
+	StyleFormat = sld
+	Styles = [StyleImpl[ name=generic]]
+	StyleUrl = null
+	StyleVersion = null
+	Tiled = false
+	TilesOrigin = null
+	Time = []
+	Transparent = true
+	ValidateSchema = false
+	Version = 1.1.1
+	ViewParams = null
+	Width = 769
+25 Apr 09:48:08 INFO   [geoserver.flow] - releasing flow controllers for [WMS 1.1.1 GetMap]
+25 Apr 09:48:08 INFO   [geoserver.flow] - Request completed, running requests: 0, blocked requests: 0

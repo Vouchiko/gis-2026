@@ -1565,86 +1565,6 @@
         },
         {
             "type": "Feature",
-            "id": "way/371380863",
-            "properties": {
-                "timestamp": "2015-09-18T18:01:49Z",
-                "version": "1",
-                "changeset": "34108323",
-                "user": "romanshuvalov",
-                "uid": "644005",
-                "natural": "wood",
-                "id": "way/371380863"
-            },
-            "geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
-                            50.328496,
-                            53.5581297
-                        ],
-                        [
-                            50.3284463,
-                            53.5579425
-                        ],
-                        [
-                            50.3284795,
-                            53.5578292
-                        ],
-                        [
-                            50.3285956,
-                            53.5577504
-                        ],
-                        [
-                            50.3287863,
-                            53.5577405
-                        ],
-                        [
-                            50.3292258,
-                            53.5578194
-                        ],
-                        [
-                            50.3296737,
-                            53.5579869
-                        ],
-                        [
-                            50.3298229,
-                            53.5581248
-                        ],
-                        [
-                            50.3298229,
-                            53.5582873
-                        ],
-                        [
-                            50.3296737,
-                            53.5585928
-                        ],
-                        [
-                            50.3295741,
-                            53.5586913
-                        ],
-                        [
-                            50.3294912,
-                            53.5587356
-                        ],
-                        [
-                            50.3286951,
-                            53.558647
-                        ],
-                        [
-                            50.3284048,
-                            53.5584401
-                        ],
-                        [
-                            50.328496,
-                            53.5581297
-                        ]
-                    ]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
             "id": "way/371380865",
             "properties": {
                 "timestamp": "2015-09-18T18:01:49Z",
@@ -1703,16 +1623,18 @@
             "type": "Feature",
             "id": "way/371380891",
             "properties": {
-                "timestamp": "2026-04-09T06:58:31Z",
-                "version": "2",
-                "changeset": "181081422",
+                "timestamp": "2026-04-27T04:21:41Z",
+                "version": "3",
+                "changeset": "181871895",
                 "user": "vouchiko",
                 "uid": "24024497",
                 "addr:housenumber": "49",
                 "addr:street": "Березовая улица",
+                "addr:village": "поселок Кирилленский",
                 "building": "house",
                 "building:levels": "2",
                 "house": "detached",
+                "is_in:district": "Красноярский район",
                 "id": "way/371380891"
             },
             "geometry": {
@@ -1747,16 +1669,18 @@
             "type": "Feature",
             "id": "way/371380892",
             "properties": {
-                "timestamp": "2026-04-09T06:58:31Z",
-                "version": "2",
-                "changeset": "181081422",
+                "timestamp": "2026-04-27T04:21:41Z",
+                "version": "3",
+                "changeset": "181871895",
                 "user": "vouchiko",
                 "uid": "24024497",
                 "addr:housenumber": "19",
                 "addr:street": "Березовая улица",
+                "addr:village": "поселок Кирилленский",
                 "building": "house",
                 "building:levels": "2",
                 "house": "detached",
+                "is_in:district": "Красноярский район",
                 "id": "way/371380892"
             },
             "geometry": {
@@ -1791,16 +1715,18 @@
             "type": "Feature",
             "id": "way/371380893",
             "properties": {
-                "timestamp": "2026-04-09T06:58:31Z",
-                "version": "2",
-                "changeset": "181081422",
+                "timestamp": "2026-04-27T04:21:41Z",
+                "version": "3",
+                "changeset": "181871895",
                 "user": "vouchiko",
                 "uid": "24024497",
                 "addr:housenumber": "53",
                 "addr:street": "Березовая улица",
+                "addr:village": "поселок Кирилленский",
                 "building": "house",
                 "building:levels": "2",
                 "house": "detached",
+                "is_in:district": "Красноярский район",
                 "id": "way/371380893"
             },
             "geometry": {
@@ -2080,16 +2006,18 @@
             "type": "Feature",
             "id": "way/1497853811",
             "properties": {
-                "timestamp": "2026-04-09T06:58:31Z",
-                "version": "1",
-                "changeset": "181081422",
+                "timestamp": "2026-04-27T04:21:41Z",
+                "version": "2",
+                "changeset": "181871895",
                 "user": "vouchiko",
                 "uid": "24024497",
                 "addr:housenumber": "9",
                 "addr:street": "Березовая улица",
+                "addr:village": "поселок Кирилленский",
                 "building": "house",
                 "building:levels": "2",
                 "house": "detached",
+                "is_in:district": "Красноярский район",
                 "id": "way/1497853811"
             },
             "geometry": {
@@ -2124,16 +2052,18 @@
             "type": "Feature",
             "id": "way/1497853812",
             "properties": {
-                "timestamp": "2026-04-09T06:58:31Z",
-                "version": "1",
-                "changeset": "181081422",
+                "timestamp": "2026-04-27T04:21:41Z",
+                "version": "2",
+                "changeset": "181871895",
                 "user": "vouchiko",
                 "uid": "24024497",
                 "addr:housenumber": "1",
                 "addr:street": "Березовая улица",
+                "addr:village": "поселок Кирилленский",
                 "building": "house",
                 "building:levels": "2",
                 "house": "detached",
+                "is_in:district": "Красноярский район",
                 "id": "way/1497853812"
             },
             "geometry": {
@@ -2147,6 +2077,10 @@
                         [
                             50.3302636,
                             53.5565736
+                        ],
+                        [
+                            50.3302817,
+                            53.5565766
                         ],
                         [
                             50.3303747,
@@ -2168,16 +2102,18 @@
             "type": "Feature",
             "id": "way/1497853813",
             "properties": {
-                "timestamp": "2026-04-09T06:58:31Z",
-                "version": "1",
-                "changeset": "181081422",
+                "timestamp": "2026-04-27T04:21:41Z",
+                "version": "2",
+                "changeset": "181871895",
                 "user": "vouchiko",
                 "uid": "24024497",
                 "addr:housenumber": "5",
                 "addr:street": "Березовая улица",
+                "addr:village": "поселок Кирилленский",
                 "building": "house",
                 "building:levels": "1",
                 "house": "detached",
+                "is_in:district": "Красноярский район",
                 "id": "way/1497853813"
             },
             "geometry": {
@@ -2210,18 +2146,116 @@
         },
         {
             "type": "Feature",
+            "id": "way/1497853814",
+            "properties": {
+                "timestamp": "2026-04-27T04:21:41Z",
+                "version": "2",
+                "changeset": "181871895",
+                "user": "vouchiko",
+                "uid": "24024497",
+                "addr:housenumber": "144",
+                "addr:street": "Березовая улица",
+                "addr:village": "поселок Кирилленский",
+                "building": "house",
+                "building:levels": "2",
+                "house": "detached",
+                "is_in:district": "Красноярский район",
+                "id": "way/1497853814"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            50.335901,
+                            53.558988
+                        ],
+                        [
+                            50.3359377,
+                            53.5588786
+                        ],
+                        [
+                            50.3361024,
+                            53.5588981
+                        ],
+                        [
+                            50.3360656,
+                            53.5590075
+                        ],
+                        [
+                            50.335901,
+                            53.558988
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "way/1497853815",
+            "properties": {
+                "timestamp": "2026-04-27T04:21:41Z",
+                "version": "2",
+                "changeset": "181871895",
+                "user": "vouchiko",
+                "uid": "24024497",
+                "addr:housenumber": "118",
+                "addr:street": "Березовая улица",
+                "addr:village": "поселок Кирилленский",
+                "building": "house",
+                "building:levels": "2",
+                "house": "detached",
+                "is_in:district": "Красноярский район",
+                "id": "way/1497853815"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            50.3352493,
+                            53.5589321
+                        ],
+                        [
+                            50.3352799,
+                            53.5588399
+                        ],
+                        [
+                            50.3353339,
+                            53.5588462
+                        ],
+                        [
+                            50.3354052,
+                            53.5588546
+                        ],
+                        [
+                            50.3353745,
+                            53.5589468
+                        ],
+                        [
+                            50.3352493,
+                            53.5589321
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
             "id": "way/1497853816",
             "properties": {
-                "timestamp": "2026-04-09T06:58:31Z",
-                "version": "1",
-                "changeset": "181081422",
+                "timestamp": "2026-04-27T04:21:41Z",
+                "version": "2",
+                "changeset": "181871895",
                 "user": "vouchiko",
                 "uid": "24024497",
                 "addr:housenumber": "73",
                 "addr:street": "Березовая улица",
+                "addr:village": "поселок Кирилленский",
                 "building": "house",
                 "building:levels": "3",
                 "house": "detached",
+                "is_in:district": "Красноярский район",
                 "id": "way/1497853816"
             },
             "geometry": {
@@ -2231,6 +2265,10 @@
                         [
                             50.3377208,
                             53.5557911
+                        ],
+                        [
+                            50.3378903,
+                            53.5557276
                         ],
                         [
                             50.3380599,

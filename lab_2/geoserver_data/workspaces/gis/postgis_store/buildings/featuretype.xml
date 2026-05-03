@@ -24,18 +24,31 @@
     <minx>50.33022689819336</minx>
     <maxx>50.338138580322266</maxx>
     <miny>53.5556640625</miny>
-    <maxy>53.55738830566406</maxy>
+    <maxy>53.55900955200195</maxy>
     <crs>EPSG:4326</crs>
   </nativeBoundingBox>
   <latLonBoundingBox>
     <minx>50.33022689819336</minx>
     <maxx>50.338138580322266</maxx>
     <miny>53.5556640625</miny>
-    <maxy>53.55738830566406</maxy>
+    <maxy>53.55900955200195</maxy>
     <crs>EPSG:4326</crs>
   </latLonBoundingBox>
   <projectionPolicy>FORCE_DECLARED</projectionPolicy>
   <enabled>true</enabled>
+  <metadata>
+    <entry key="elevation">
+      <dimensionInfo>
+        <enabled>false</enabled>
+      </dimensionInfo>
+    </entry>
+    <entry key="time">
+      <dimensionInfo>
+        <enabled>false</enabled>
+      </dimensionInfo>
+    </entry>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
   <store class="dataStore">
     <id>DataStoreInfoImpl--e3f3fb4:19dc3cc8f80:-7ff4</id>
   </store>
